@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style link="forms.css"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mailto:rlakshmankumar707@gmail.com" method="post" target="details">
+        <label>Name: </label>
+        <input type="text"><br><br>
+        <label>Age: </label>
+        <input type="text" value=""><br><br>
+        <label>Date of Birth</label>
+        <input type="date" value=""><br><br>
+        <label>Email: </label>
+        <input type="email" minlength="5" maxlength="30"><br><br>
+        <label>Gender :</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+        <label for="tempB">Temperature :</label>
+        <input type="range" id="tempB" name="temp" list="values">
+        <datalist id="values">
+            <option value="o" label="very cold!"></option>
+            <option value="25" label="cool"></option>
+            <option value="50" label="medium"></option>
+            <option value="75" label="getting warm"></option>
+            <option value="100" label="hot!"></option>
+        </datalist><br><br>
+        <label>Image:</label>
+        <input type="file"><br><br>
+        <label>Your Message:</label>
+        <textarea name="name" rows="10" cols="50"></textarea><br><br>
+        <p><input type="submit" value="Save"></p><br><br>
+        <h3>Your details:</h3>
+        <iframe name="details" style="height: 500px; width: 800px;"></iframe>
+    </form>
+</body>
+</html>
